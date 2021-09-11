@@ -24,13 +24,15 @@ ul {
   justify-content: space-between;
 }
 
-.header-logo {
+.header-logo img {
+  width: 60%;
   font-size: 24px;
   color: #f9faf8;
 }
 .header-links {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   font-size: 18px;
   color: #e5e7eb;
 }
@@ -101,7 +103,8 @@ a {
 
 .cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 8vh;
 }
 .cards-header {
   text-align: center;
