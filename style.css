@@ -1,6 +1,6 @@
 /* LUULTAVASTI PARAS TAPA HOITAA HEADER + MAIN, ON YHDISTÄÄ NE SAMAAN EIKÄ
 LAITTAA ERIKSEEN. HEADER LOGO JA LINKIT YKSI LAATIKKO, ALLA TOINEN LAATIKKO
-KONTENTILLE. FLEX COLUMN.*/
+KONTENTILLE. FLEX COLUMN. SIIRRÄ FRONT-IMAGE HEROON ILMAN ERILLISTÄ DIV:IÄ*/
 
 * {
   margin: 0;
@@ -17,31 +17,50 @@ ul {
   list-style-type: none;
 }
 
-header {
+.header {
   display: flex;
-  background-color: #1f2937;
+  margin-top: 2vh;
   justify-content: space-evenly;
 }
 
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
 .header-links {
   display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+ul {
+  gap: 5vh;
 }
 
 .hero {
   background-color: #1f2937;
+  min-height: 80vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .title {
   /*max-width: 35vh;*/
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   padding: 5vh;
-  flex: 1;
+  margin: auto;
 }
-
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+  flex: 1;
+  gap: 2vh;
+}
 .front-image {
   /*max-width: 35vh;*/
   display: flex;
@@ -68,6 +87,6 @@ a {
   background-color: #3882f6;
   color: white;
   border-style: none;
-  padding: 4px;
+  padding: 4px 14px 4px 14px;
   border-radius: 5px;
 }
