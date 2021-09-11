@@ -21,20 +21,26 @@ ul {
   display: flex;
   margin-top: 2vh;
 
-  justify-content: space-between;
+  /*HARKITSE
+  position: fixed;
+  background-color: #1f2937;*/
 }
-
+.header-logo {
+  flex: 1;
+}
 .header-logo img {
-  width: 60%;
-  font-size: 24px;
+  max-width: 20%;
+  align-self: center;
+
   color: #f9faf8;
 }
 .header-links {
   display: flex;
-  justify-content: flex-end;
+
   align-items: center;
   font-size: 18px;
   color: #e5e7eb;
+  margin-right: 18vh;
 }
 ul {
   gap: 5vh;
@@ -93,11 +99,18 @@ a {
   border-style: none;
   padding: 4px 14px 4px 14px;
   border-radius: 5px;
+  font-weight: 600;
+}
+
+.signup:hover {
+  cursor: pointer;
 }
 .cards-section {
   display: flex;
+  min-height: 60vh;
   flex-direction: column;
-  gap: 3vh;
+  justify-content: flex-start;
+  gap: 7vh;
   padding: 3vh;
 }
 
@@ -111,7 +124,6 @@ a {
   font-size: 36px;
   font-weight: bolder;
   color: #1f2937;
-  margin: auto;
 }
 .card {
   display: flex;
@@ -130,4 +142,25 @@ a {
 .card p {
   color: #1f2937;
   font-size: 14px;
+}
+
+.quote-section {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  max-width: 80vh;
+  padding: 3vh 3vh 1vh 3vh;
+  font-size: 36px;
+  font-weight: 100;
+  font-style: italic;
+  color: #1f2937;
+  flex: 1 1 auto;
+}
+
+.quoteby {
+  margin-left: 60vh;
 }
