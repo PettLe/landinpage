@@ -20,7 +20,8 @@ ul {
 .header {
   display: flex;
   margin-top: 2vh;
-  justify-content: space-evenly;
+
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -42,22 +43,22 @@ ul {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 0vh 25vh 0vh 25vh;
 }
 .title {
   /*max-width: 35vh;*/
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 5vh;
+  align-items: flex;
+  justify-content: space-evenly;
+  gap: 15vh;
   margin: auto;
 }
 .main-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5vh;
+
+  align-items: flex-start;
+
   flex: 1;
   gap: 2vh;
 }
@@ -66,8 +67,9 @@ ul {
   display: flex;
   flex: 1;
 }
-.front-image img {
-  max-width: 540px;
+img {
+  max-width: 100%;
+  align-self: center;
 }
 
 h1 {
@@ -89,4 +91,40 @@ a {
   border-style: none;
   padding: 4px 14px 4px 14px;
   border-radius: 5px;
+}
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding: 3vh;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cards-header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  margin: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  flex: 1;
+  max-width: 20vh;
+}
+
+.card img {
+  border-radius: 25px;
+  border: 2px solid #3882f6;
+}
+
+.card p {
+  color: #1f2937;
+  font-size: 14px;
 }
